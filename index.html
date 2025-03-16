@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnkiNet - Transformamos ideas en realidades digitales</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo-container">
+        <img src="assets/logo.png" alt="Logo EnkiNet" class="logo">
+      </div>
+      <nav>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Jumbotron -->
+    <section id="inicio" class="jumbotron">
+      <div class="overlay"></div>
+      <div class="container jumbotron-content">
+        <h1 class="animate__animated animate__fadeInDown">Transformamos ideas en realidades digitales</h1>
+        <p class="animate__animated animate__fadeInUp">Creamos páginas web, aplicaciones móviles y software personalizados. Impulsamos tu crecimiento estratégico y económico.</p>
+        <form id="contactForm" class="animate__animated animate__fadeIn">
+          <div class="form-group">
+            <input type="email" id="emailInput" placeholder="Ingresa tu correo" required>
+            <button type="submit" class="btn-primary">¡Contáctanos!</button>
+          </div>
+        </form>
+        <p id="confirmationMessage" class="hidden">¡Gracias por contactarnos! Te responderemos pronto.</p>
+      </div>
+    </section>
+
+    <!-- Servicios Principales -->
+    <section id="servicios" class="servicios">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nuestros servicios</h2>
+          <p>Soluciones integrales para tu negocio</p>
+        </div>
+        <div class="carousel-container">
+          <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+          <div class="servicios-carousel">
+            <div class="servicio">
+              <div class="servicio-img">
+                <img src="assets/desarrollo-web.jpg" alt="Desarrollo Web">
+              </div>
+              <div class="servicio-content">
+                <h3>Desarrollo Web</h3>
+                <p>Páginas web modernas y funcionales, adaptadas a cualquier dispositivo y con experiencias de usuario optimizadas.</p>
+                <a href="#" class="btn-secondary">Más información</a>
+              </div>
+            </div>
+            <div class="servicio">
+              <div class="servicio-img">
+                <img src="assets/app-movil.jpg" alt="Aplicaciones Móviles">
+              </div>
+              <div class="servicio-content">
+                <h3>Aplicaciones Móviles</h3>
+                <p>Apps intuitivas y escalables, diseñadas para solucionar problemas reales y mejorar la experiencia del usuario.</p>
+                <a href="#" class="btn-secondary">Más información</a>
+              </div>
+            </div>
+            <div class="servicio">
+              <div class="servicio-img">
+                <img src="assets/software-personalizado.jpg" alt="Software Personalizado">
+              </div>
+              <div class="servicio-content">
+                <h3>Software Personalizado</h3>
+                <p>Soluciones adaptadas a tus necesidades específicas, con escalabilidad y seguridad garantizadas.</p>
+                <a href="#" class="btn-secondary">Más información</a>
+              </div>
+            </div>
+            <div class="servicio">
+              <div class="servicio-img">
+                <img src="assets/analisis-datos.jpg" alt="Análisis Avanzado de Datos">
+              </div>
+              <div class="servicio-content">
+                <h3>Análisis Avanzado de Datos</h3>
+                <p>Insights valiosos para decisiones informadas, transformando tus datos en ventajas competitivas.</p>
+                <a href="#" class="btn-secondary">Más información</a>
+              </div>
+            </div>
+            <div class="servicio">
+              <div class="servicio-img">
+                <img src="assets/gestion-inversiones.jpg" alt="Gestión de Inversiones">
+              </div>
+              <div class="servicio-content">
+                <h3>Gestión de Inversiones</h3>
+                <p>Maximizamos tu retorno de inversión con estrategias basadas en datos y análisis de mercado.</p>
+                <a href="#" class="btn-secondary">Más información</a>
+              </div>
+            </div>
+            <div class="servicio">
+              <div class="servicio-img">
+                <img src="assets/optimizacion-ventas.jpg" alt="Optimización de Ventas">
+              </div>
+              <div class="servicio-content">
+                <h3>Optimización de Ventas</h3>
+                <p>Estrategias efectivas para aumentar ventas y mejorar la satisfacción del cliente.</p>
+                <a href="#" class="btn-secondary">Más información</a>
+              </div>
+            </div>
+            <div class="servicio">
+              <div class="servicio-img">
+                <img src="assets/redes-inteligentes.jpg" alt="Redes Inteligentes">
+              </div>
+              <div class="servicio-content">
+                <h3>Redes inteligentes</h3>
+                <p>Maximiza la eficacia operativa con sistemas de redes avanzados y seguros.</p>
+                <a href="#" class="btn-secondary">Más información</a>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="carousel-indicators">
+          <!-- Indicadores generados dinámicamente por JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Nosotros/Acerca de -->
+    <section id="nosotros" class="nosotros">
+      <div class="container">
+        <div class="section-header">
+          <h2>Quiénes Somos</h2>
+          <p>Conoce más sobre EnkiNet</p>
+        </div>
+        <div class="nosotros-content">
+          <div class="nosotros-text">
+            <h3>Nuestra Misión</h3>
+            <p>En EnkiNet transformamos ideas en realidades digitales a través de la creación de páginas web, aplicaciones móviles y software personalizados. Nos especializamos en diseñar soluciones integrales que se adaptan a las necesidades únicas de cada cliente, impulsando su crecimiento económico y estratégico con un enfoque innovador y profesional.</p>
+            
+            <h3>Nuestra Experiencia</h3>
+            <p>Nuestra experiencia abarca análisis avanzado de datos, gestión de inversiones y optimización de ventas, permitiéndonos ofrecer servicios que van desde el diseño y la gestión de carteras de clientes hasta la implementación de estrategias de ventas minoristas y mayoristas. Integramos soluciones tecnológicas avanzadas, como redes inteligentes, para maximizar la eficacia operativa de nuestros clientes.</p>
+            
+            <h3>Nuestro Método</h3>
+            <p>En EnkiNet, aplicamos una metodología basada en datos concretos y objetivos definidos, garantizando resultados sobresalientes, escalabilidad y crecimiento sostenible. Ofrecemos beneficios excepcionales que no solo mejoran el rendimiento de nuestros clientes, sino que los posicionan como líderes en sus industrias.</p>
+          </div>
+          <div class="nosotros-stats">
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-text">Proyectos completados</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">95%</span>
+              <span class="stat-text">Clientes satisfechos</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">1+</span>
+              <span class="stat-text">Años de experiencia</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">24/7</span>
+              <span class="stat-text">Soporte técnico</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catálogo de Productos -->
+    <section id="catalogo" class="catalogo">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nuestros Productos</h2>
+          <p>Soluciones a medida para tu negocio</p>
+        </div>
+        <div class="productos-grid">
+          <div class="producto">
+            <div class="producto-img">
+              <img src="assets/portal-clientes.jpg" alt="Portal de Clientes">
+              <div class="producto-overlay">
+                <a href="#" class="btn-primary">Ver demostración</a>
+              </div>
+            </div>
+            <div class="producto-content">
+              <h3>Portal de Clientes</h3>
+              <p>Plataforma interactiva para gestionar la relación con tus usuarios y clientes, con funcionalidades como seguimiento de pedidos, historial de compras y atención al cliente integrada.</p>
+              <ul class="producto-features">
+                <li><i class="fas fa-check"></i> Interfaz personalizable</li>
+                <li><i class="fas fa-check"></i> Gestión de usuarios avanzada</li>
+                <li><i class="fas fa-check"></i> Integración con CRM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="producto">
+            <div class="producto-img">
+              <img src="assets/consultoria-tecnologica.jpg" alt="Consultoría Tecnológica">
+              <div class="producto-overlay">
+                <a href="#" class="btn-primary">Ver demostración</a>
+              </div>
+            </div>
+            <div class="producto-content">
+              <h3>Consultoría Tecnológica</h3>
+              <p>Servicios de asesoramiento experto para la optimización de procesos y estrategias digitales, incluyendo análisis de infraestructura, recomendaciones de mejora y implementación de soluciones.</p>
+              <ul class="producto-features">
+                <li><i class="fas fa-check"></i> Auditoría tecnológica completa</li>
+                <li><i class="fas fa-check"></i> Plan de implementación detallado</li>
+                <li><i class="fas fa-check"></i> Seguimiento y soporte continuo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contáctanos</h2>
+          <p>Estamos listos para ayudarte</p>
+        </div>
+        <div class="contacto-content">
+          <div class="contacto-form">
+            <form id="fullContactForm">
+              <div class="form-group">
+                <label for="nombreInput">Nombre</label>
+                <input type="text" id="nombreInput" placeholder="Tu nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="emailFullInput">Correo electrónico</label>
+                <input type="email" id="emailFullInput" placeholder="Tu correo electrónico" required>
+              </div>
+              <div class="form-group">
+                <label for="asuntoInput">Asunto</label>
+                <input type="text" id="asuntoInput" placeholder="Asunto de tu mensaje" required>
+              </div>
+              <div class="form-group">
+                <label for="mensajeInput">Mensaje</label>
+                <textarea id="mensajeInput" placeholder="Tu mensaje" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Enviar mensaje</button>
+            </form>
+          </div>
+          <div class="contacto-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Dirección</h4>
+                <p>Av. Tecnológica 123, Ciudad Digital</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Teléfono</h4>
+                <p>+123 456 7890</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>info@enkinet.com</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="Logo EnkiNet" class="logo">
+          <p>Transformamos ideas en realidades digitales</p>
+        </div>
+        <div class="footer-links">
+          <h4>Enlaces rápidos</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4>Nuestros servicios</h4>
+          <ul>
+            <li>Desarrollo Web</li>
+            <li>Aplicaciones Móviles</li>
+            <li>Software Personalizado</li>
+            <li>Análisis de datos</li>
+            <li>Consultoría Tecnológica</li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Suscríbete para recibir noticias y actualizaciones</p>
+          <form id="newsletterForm">
+            <div class="form-group">
+              <input type="email" id="newsletterEmail" placeholder="Tu correo electrónico" required>
+              <button type="submit" class="btn-secondary">Suscribirse</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EnkiNet. Todos los derechos reservados.</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón de volver arriba -->
+  <a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- Script -->
+  <script src="script.js"></script>
