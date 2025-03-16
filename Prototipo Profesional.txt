@@ -1,0 +1,37 @@
++-------------------------------------------------------------+
+| Header                                                      |
+| [Logo EnkiNet] | Inicio | Servicios | Catálogo | Contacto   |
++-------------------------------------------------------------+
+| Jumbotron                                                   |
+| Título: Transformamos ideas en realidades digitales         |
+| Descripción: Creamos páginas web, aplicaciones móviles y    |
+| software personalizados. Impulsamos tu crecimiento          |
+| estratégico y económico.                                    |
+| [Formulario de registro]                                    |
++-------------------------------------------------------------+
+| Servicios Principales                                       |
+| [Imagen + Título] Desarrollo Web                            |
+| Descripción: Páginas web modernas y funcionales.            |
+| [Imagen + Título] Aplicaciones Móviles                      |
+| Descripción: Apps intuitivas y escalables.                  |
+| [Imagen + Título] Software Personalizado                    |
+| Descripción: Soluciones adaptadas a tus necesidades.        |
+| [Imagen + Título] Análisis Avanzado de Datos                |
+| Descripción: Insights valiosos para decisiones informadas.  |
+| [Imagen + Título] Gestión de Inversiones                    |
+| Descripción: Maximizamos tu retorno de inversión.           |
+| [Imagen + Título] Optimización de Ventas                    |
+| Descripción: Estrategias efectivas para aumentar ventas.    |
+| [Imagen + Título] Redes Inteligentes                        |
+| Descripción: Maximiza la eficacia operativa.                |
++-------------------------------------------------------------+
+| Catálogo de Productos                                       |
+| [Imagen + Título] Portal de Clientes                        |
+| Descripción: Plataforma interactiva para tus usuarios.      |
+| [Imagen + Título] Consultoría Tecnológica                   |
+| Descripción: Optimización de procesos y estrategias         |
+|  digitales                                                  |
++-------------------------------------------------------------+
+| Footer                                                      |
+| Redes Sociales | Contacto | Copyright © 2025 EnkiNet        |
++-------------------------------------------------------------+
