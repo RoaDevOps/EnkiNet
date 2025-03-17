@@ -172,8 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
         producto.style.transform = 'translateY(0)';
       });
     });
-  }
-});
+  }});
 
 
 // Validar correo electrónico
