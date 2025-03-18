@@ -41,22 +41,49 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Navegación suave
+  // Función para scroll suave a secciones
+  function scrollToSection(sectionId) {
+    const targetElement = document.getElementById(sectionId);
+    if (targetElement) {
+      const headerOffset = header.offsetHeight;
+      const elementPosition = targetElement.offsetTop;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  }
+
+  // Función para navegar a un servicio específico
+  function scrollToService(serviceIndex) {
+    const serviciosSection = document.getElementById('servicios');
+    if (serviciosSection) {
+      const headerOffset = header.offsetHeight;
+      const elementPosition = serviciosSection.offsetTop;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+
+      // Mostrar el servicio específico en el carrusel
+      if (serviciosCarousel) {
+        currentIndex = serviceIndex;
+        updateCarousel();
+      }
+    }
+  }
+
+  // Navegación suave para enlaces con #
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-      
-      if (targetElement) {
-        const headerOffset = header.offsetHeight;
-        const elementPosition = targetElement.offsetTop;
-        const offsetPosition = elementPosition - headerOffset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
+      if (!this.hasAttribute('onclick')) { // Solo para enlaces sin onclick personalizado
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        scrollToSection(targetId);
       }
     });
   });
