@@ -687,8 +687,23 @@ body.dark-theme .contacto-form {
 }
 
 .contacto-form .form-group {
-  display: block;
   margin-bottom: 20px;
+}
+
+.contacto-form .form-group:has(input[type="checkbox"]) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacto-form .form-group:has(input[type="checkbox"]) label {
+  margin-bottom: 0;
+  display: inline;
+}
+
+.contacto-form input[type="checkbox"] {
+  width: auto;
+  margin: 0;
 }
 
 .contacto-form label {
