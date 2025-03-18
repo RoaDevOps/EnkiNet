@@ -8,36 +8,43 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <!-- Favicon -->
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-  <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="EnkiNet - Transformamos ideas en realidades digitales">
   <meta property="og:description" content="Soluciones integrales de desarrollo web, aplicaciones móviles y software personalizado para impulsar tu negocio.">
   <meta property="og:image" content="assets/og-image.jpg">
   <meta property="og:url" content="https://enkinet.com">
   <meta property="og:type" content="website">
-  <!-- Preconnect para CDN -->
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 </head>
-<body>
+<body class="dark-theme">
+  <!-- Theme Toggle Button -->
+  <div class="theme-toggle">
+    <button id="theme-btn" aria-label="Cambiar tema">
+      <i class="fas fa-adjust"></i>
+    </button>
+  </div>
+
   <!-- Header -->
   <header class="site-header">
     <div class="container header-container">
       <div class="logo-container">
         <a href="#inicio">
-          <img src="assets/logo.png" alt="Logo EnkiNet" class="logo" width="150" height="50">
+          <img src="assets/logo.png" alt="Logo EnkiNet" class="logo" width="75" height="75">
         </a>
+        <div class="header-text">
+          <h1>Transformamos ideas en realidades digitales</h1>
+        </div>
       </div>
       <nav class="main-nav">
         <button class="menu-toggle" aria-label="Abrir menú">
           <i class="fas fa-bars"></i>
         </button>
         <ul class="nav-links">
-          <li><a href="#inicio" class="nav-link">Inicio</a></li>
-          <li><a href="#servicios" class="nav-link">Servicios</a></li>
-          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-          <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
-          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+          <li><a href="#inicio" class="nav-link"><button class="nav-btn">Inicio</button></a></li>
+          <li><a href="#servicios" class="nav-link"><button class="nav-btn">Servicios</button></a></li>
+          <li><a href="#nosotros" class="nav-link"><button class="nav-btn">Nosotros</button></a></li>
+          <li><a href="#catalogo" class="nav-link"><button class="nav-btn">Catálogo</button></a></li>
+          <li><a href="#contacto" class="nav-link"><button class="nav-btn">Contacto</button></a></li>
         </ul>
       </nav>
     </div>
@@ -47,13 +54,8 @@
     <!-- Hero Section -->
     <section id="inicio" class="jumbotron">
       <div class="overlay"></div>
-      <div class="container jumbotron-content">
-        <h1 class="animate__animated animate__fadeInDown"><span class="bold-text">Transformamos ideas en realidades digitales</span></h1>
-        <p class="animate__animated animate__fadeInUp">Creamos páginas web, aplicaciones móviles y software personalizados. Impulsamos tu crecimiento estratégico y económico.</p>
-        <div class="cta-buttons">
-          <a href="#contacto" class="btn-primary">Contáctanos</a>
-          <a href="#servicios" class="btn-secondary">Nuestros servicios</a>
-        </div>
+      <div class="banner-frame">
+        <img src="assets/banner.jpg" alt="Banner EnkiNet" class="banner-image">
       </div>
     </section>
 
@@ -62,9 +64,9 @@
       <!-- Servicios principales -->
       <section id="servicios" class="servicios">
         <div class="container">
-          <div class="section-header">
-            <h2>Nuestros servicios</h2>
-            <p>Soluciones integrales para tu negocio</p>
+          <div class="section-header animate-on-scroll">
+            <h2>Descubre Nuestros Servicios Innovadores</h2>
+            <p>Ofrecemos soluciones tecnológicas avanzadas para llevar tu negocio al siguiente nivel.</p>
           </div>
           <div class="carousel-container">
             <button class="carousel-btn prev" aria-label="Anterior servicio">
@@ -73,114 +75,100 @@
             <div class="servicios-carousel">
               <div class="servicio">
                 <div class="servicio-img">
-                  <img src="assets/desarrollo-web.jpg" alt="Desarrollo Web" width="400" height="300" loading="lazy">
+                  <img src="assets/desarrollo-web.jpg" alt="Desarrollo Web" loading="lazy">
                 </div>
                 <div class="servicio-content">
-                  <h3>Desarrollo web</h3>
-                  <p>Páginas web modernas y funcionales, adaptadas a cualquier dispositivo con experiencias de usuario optimizadas. Incluye diseño responsivo, optimización SEO, y mantenimiento continuo para garantizar el mejor rendimiento.</p>
+                  <h3>Desarrollo Web</h3>
+                  <p>Páginas web modernas y funcionales, adaptadas a cualquier dispositivo con experiencias de usuario optimizadas. Diseñamos sitios web que no solo son visualmente atractivos, sino también rápidos, seguros y optimizados para motores de búsqueda, garantizando una presencia digital sólida.</p>
                   <ul class="servicio-features">
-                    <li><i class="fas fa-check"></i> Diseño responsivo</li>
-                    <li><i class="fas fa-check"></i> Optimización SEO</li>
-                    <li><i class="fas fa-check"></i> Mantenimiento continuo</li>
+                    <li><i class="fas fa-check"></i> Diseño responsivo para todos los dispositivos</li>
+                    <li><i class="fas fa-check"></i> Optimización SEO para mejor posicionamiento</li>
+                    <li><i class="fas fa-check"></i> Mantenimiento continuo para un rendimiento óptimo</li>
                   </ul>
-                  <a href="#contacto" class="btn-secondary">Más información</a>
                 </div>
               </div>
-              
               <div class="servicio">
                 <div class="servicio-img">
-                  <img src="assets/app-movil.jpg" alt="Aplicaciones móviles" width="400" height="300" loading="lazy">
+                  <img src="assets/app-movil.jpg" alt="Aplicaciones móviles" loading="lazy">
                 </div>
                 <div class="servicio-content">
-                  <h3>Aplicaciones móviles</h3>
-                  <p>Apps intuitivas y escalables diseñadas para resolver problemas reales y mejorar la experiencia del usuario. Ofrecemos desarrollo nativo y multiplataforma con integración de notificaciones push y analíticas avanzadas.</p>
+                  <h3>Aplicaciones Móviles</h3>
+                  <p>Apps intuitivas y escalables diseñadas para resolver problemas reales y mejorar la experiencia del usuario. Desarrollamos aplicaciones nativas y multiplataforma que se integran perfectamente con tus sistemas existentes, ofreciendo funcionalidades avanzadas y un rendimiento excepcional.</p>
                   <ul class="servicio-features">
-                    <li><i class="fas fa-check"></i> Desarrollo nativo/multiplataforma</li>
-                    <li><i class="fas fa-check"></i> Notificaciones push</li>
-                    <li><i class="fas fa-check"></i> Analíticas avanzadas</li>
+                    <li><i class="fas fa-check"></i> Desarrollo nativo y multiplataforma</li>
+                    <li><i class="fas fa-check"></i> Notificaciones push personalizadas</li>
+                    <li><i class="fas fa-check"></i> Analíticas avanzadas para medir el impacto</li>
                   </ul>
-                  <a href="#contacto" class="btn-secondary">Más información</a>
                 </div>
               </div>
-              
-              <!-- Resto de servicios similares -->
               <div class="servicio">
                 <div class="servicio-img">
-                  <img src="assets/software-personalizado.jpg" alt="Software Personalizado" width="400" height="300" loading="lazy">
+                  <img src="assets/software-personalizado.jpg" alt="Software Personalizado" loading="lazy">
                 </div>
                 <div class="servicio-content">
                   <h3>Software Personalizado</h3>
-                  <p>Soluciones adaptadas a tus necesidades específicas, con escalabilidad y seguridad garantizadas. Incluye desarrollo a medida, integración con sistemas existentes y soporte técnico especializado.</p>
+                  <p>Soluciones adaptadas a tus necesidades específicas, con escalabilidad y seguridad garantizadas. Creamos software a medida que optimiza tus procesos internos, mejora la productividad y se adapta al crecimiento de tu negocio, con un enfoque en la seguridad y la integración.</p>
                   <ul class="servicio-features">
-                    <li><i class="fas fa-check"></i> Desarrollo a medida</li>
-                    <li><i class="fas fa-check"></i> Integración con sistemas</li>
-                    <li><i class="fas fa-check"></i> Soporte técnico</li>
+                    <li><i class="fas fa-check"></i> Desarrollo a medida según tus requerimientos</li>
+                    <li><i class="fas fa-check"></i> Integración con sistemas existentes</li>
+                    <li><i class="fas fa-check"></i> Soporte técnico 24/7</li>
                   </ul>
-                  <a href="#contacto" class="btn-secondary">Más información</a>
                 </div>
               </div>
-              
               <div class="servicio">
                 <div class="servicio-img">
-                  <img src="assets/analisis-datos.jpg" alt="Análisis Avanzado de Datos" width="400" height="300" loading="lazy">
+                  <img src="assets/analisis-datos.jpg" alt="Análisis Avanzado de Datos" loading="lazy">
                 </div>
                 <div class="servicio-content">
-                  <h3>Análisis avanzado de datos</h3>
-                  <p>Insights valiosos para decisiones informadas, transformando tus datos en ventajas competitivas. Ofrecemos visualización de datos, predicciones basadas en IA y reportes personalizados.</p>
+                  <h3>Análisis Avanzado de Datos</h3>
+                  <p>Insights valiosos para decisiones informadas, transformando tus datos en ventajas competitivas. Utilizamos tecnologías de inteligencia artificial y aprendizaje automático para analizar tus datos y proporcionarte reportes detallados que impulsen tu estrategia empresarial.</p>
                   <ul class="servicio-features">
-                    <li><i class="fas fa-check"></i> Visualización de datos</li>
-                    <li><i class="fas fa-check"></i> Predicciones con IA</li>
-                    <li><i class="fas fa-check"></i> Reportes personalizados</li>
+                    <li><i class="fas fa-check"></i> Visualización de datos interactiva</li>
+                    <li><i class="fas fa-check"></i> Predicciones con IA para anticipar tendencias</li>
+                    <li><i class="fas fa-check"></i> Reportes personalizados para tu negocio</li>
                   </ul>
-                  <a href="#contacto" class="btn-secondary">Más información</a>
                 </div>
               </div>
-              
               <div class="servicio">
                 <div class="servicio-img">
-                  <img src="assets/gestion-inversiones.jpg" alt="Gestión de inversiones" width="400" height="300" loading="lazy">
+                  <img src="assets/gestion-inversiones.jpg" alt="Gestión de Inversiones" loading="lazy">
                 </div>
                 <div class="servicio-content">
-                  <h3>Gestión de inversiones</h3>
-                  <p>Maximizamos tu retorno de inversión con estrategias basadas en datos y análisis de mercado. Incluye portafolios diversificados, seguimiento en tiempo real y asesoramiento financiero.</p>
+                  <h3>Gestión de Inversiones</h3>
+                  <p>Maximizamos tu retorno de inversión con estrategias basadas en datos y análisis de mercado. Ofrecemos herramientas avanzadas para monitorear tus inversiones en tiempo real, con asesoramiento experto para diversificar tu portafolio y minimizar riesgos.</p>
                   <ul class="servicio-features">
-                    <li><i class="fas fa-check"></i> Portafolios diversificados</li>
-                    <li><i class="fas fa-check"></i> Seguimiento en tiempo real</li>
-                    <li><i class="fas fa-check"></i> Asesoramiento financiero</li>
+                    <li><i class="fas fa-check"></i> Portafolios diversificados para mayor seguridad</li>
+                    <li><i class="fas fa-check"></i> Seguimiento en tiempo real de tus inversiones</li>
+                    <li><i class="fas fa-check"></i> Asesoramiento financiero personalizado</li>
                   </ul>
-                  <a href="#contacto" class="btn-secondary">Más información</a>
                 </div>
               </div>
-              
               <div class="servicio">
                 <div class="servicio-img">
-                  <img src="assets/optimizacion-ventas.jpg" alt="Optimización de ventas" width="400" height="300" loading="lazy">
+                  <img src="assets/optimizacion-ventas.jpg" alt="Optimización de Ventas" loading="lazy">
                 </div>
                 <div class="servicio-content">
-                  <h3>Optimización de ventas</h3>
-                  <p>Estrategias efectivas para aumentar ventas y mejorar la satisfacción del cliente. Incluye análisis de embudos, campañas personalizadas y automatización de procesos.</p>
+                  <h3>Optimización de Ventas</h3>
+                  <p>Estrategias efectivas para aumentar ventas y mejorar la satisfacción del cliente. Analizamos tu embudo de ventas, diseñamos campañas personalizadas y automatizamos procesos para maximizar tus ingresos y fidelizar a tus clientes.</p>
                   <ul class="servicio-features">
-                    <li><i class="fas fa-check"></i> Análisis de embudos</li>
-                    <li><i class="fas fa-check"></i> Campañas personalizadas</li>
-                    <li><i class="fas fa-check"></i> Automatización</li>
+                    <li><i class="fas fa-check"></i> Análisis de embudos para identificar oportunidades</li>
+                    <li><i class="fas fa-check"></i> Campañas personalizadas para tu audiencia</li>
+                    <li><i class="fas fa-check"></i> Automatización de procesos para mayor eficiencia</li>
                   </ul>
-                  <a href="#contacto" class="btn-secondary">Más información</a>
                 </div>
               </div>
-              
               <div class="servicio">
                 <div class="servicio-img">
-                  <img src="assets/redes-inteligentes.jpg" alt="Redes Inteligentes" width="400" height="300" loading="lazy">
+                  <img src="assets/redes-inteligentes.jpg" alt="Redes Inteligentes" loading="lazy">
                 </div>
                 <div class="servicio-content">
-                  <h3>Redes inteligentes</h3>
-                  <p>Maximiza la eficacia operativa con sistemas de redes avanzados y seguros. Incluye monitoreo en tiempo real, seguridad cibernética y optimización de ancho de banda.</p>
+                  <h3>Redes Inteligentes</h3>
+                  <p>Maximiza la eficacia operativa con sistemas de redes avanzados y seguros. Implementamos soluciones de redes inteligentes que optimizan el ancho de banda, garantizan la seguridad cibernética y ofrecen monitoreo en tiempo real para mantener tu infraestructura siempre operativa.</p>
                   <ul class="servicio-features">
-                    <li><i class="fas fa-check"></i> Monitoreo en tiempo real</li>
-                    <li><i class="fas fa-check"></i> Seguridad cibernética</li>
-                    <li><i class="fas fa-check"></i> Optimización de ancho</li>
+                    <li><i class="fas fa-check"></i> Monitoreo en tiempo real de tu red</li>
+                    <li><i class="fas fa-check"></i> Seguridad cibernética de última generación</li>
+                    <li><i class="fas fa-check"></i> Optimización de ancho de banda</li>
                   </ul>
-                  <a href="#contacto" class="btn-secondary">Más información</a>
                 </div>
               </div>
             </div>
@@ -188,39 +176,39 @@
               <i class="fas fa-chevron-right"></i>
             </button>
           </div>
-          <div class="carousel-indicators">
-            <span class="indicator active"></span>
-            <span class="indicator"></span>
-            <span class="indicator"></span>
-            <span class="indicator"></span>
-            <span class="indicator"></span>
-            <span class="indicator"></span>
-            <span class="indicator"></span>
-          </div>
+
         </div>
       </section>
 
       <!-- Nosotros/Acerca de -->
       <section id="nosotros" class="nosotros">
         <div class="container">
-          <div class="section-header">
-            <h2>Quiénes somos</h2>
-            <p>Conoce más sobre EnkiNet</p>
+          <div class="section-header animate-on-scroll">
+            <h2>Conoce a EnkiNet</h2>
+            <p>Tu aliado estratégico en innovación tecnológica</p>
           </div>
           <div class="nosotros-content">
-            <div class="nosotros-text">
-              <h3>Nuestra misión</h3>
-              <p>En EnkiNet transformamos ideas en realidades digitales a través de la creación de páginas web, aplicaciones móviles y software personalizados. Nos especializamos en diseñar soluciones integrales que se adaptan a las necesidades únicas de cada cliente, impulsando su crecimiento económico y estratégico con un enfoque innovador y profesional.</p>
-              
-              <h3>Nuestra experiencia</h3>
-              <p>Nuestra experiencia abarca análisis avanzado de datos, gestión de inversiones y optimización de ventas, permitiéndonos ofrecer servicios que van desde el diseño y la gestión de carteras de clientes hasta la implementación de estrategias de ventas minoristas y mayoristas. Integramos soluciones tecnológicas avanzadas, como redes inteligentes, para maximizar la eficacia operativa de nuestros clientes.</p>
-              
-              <h3>Nuestro método</h3>
-              <p>En EnkiNet, aplicamos una metodología basada en datos concretos y objetivos definidos, garantizando resultados sobresalientes, escalabilidad y crecimiento sostenible. Ofrecemos beneficios excepcionales que no solo mejoran el rendimiento de nuestros clientes, sino que los posicionan como líderes en sus industrias.</p>
-              
-              <div class="cta-box">
-                <h4>¿Listo para transformar tu negocio?</h4>
-                <a href="#contacto" class="btn-primary">Hablemos de tu proyecto</a>
+            <div class="nosotros-grid">
+              <div class="nosotros-item">
+                <div class="nosotros-icon">
+                  <i class="fas fa-bullseye"></i>
+                </div>
+                <h3>Nuestra Misión</h3>
+                <p>Transformamos ideas en realidades digitales a través de la creación de páginas web, aplicaciones móviles y software personalizados. Nos dedicamos a ofrecer soluciones tecnológicas que impulsen el éxito de nuestros clientes.</p>
+              </div>
+              <div class="nosotros-item">
+                <div class="nosotros-icon">
+                  <i class="fas fa-trophy"></i>
+                </div>
+                <h3>Nuestra Experiencia</h3>
+                <p>Con más de un año de experiencia, abarcamos análisis avanzado de datos, gestión de inversiones y optimización de ventas, permitiéndonos ofrecer servicios innovadores que se adaptan a las necesidades del mercado actual.</p>
+              </div>
+              <div class="nosotros-item">
+                <div class="nosotros-icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Nuestro Método</h3>
+                <p>Aplicamos una metodología basada en datos concretos y objetivos definidos, garantizando resultados sobresalientes y un crecimiento sostenible para tu negocio, con un enfoque en la calidad y la innovación.</p>
               </div>
             </div>
             <div class="nosotros-stats">
@@ -230,7 +218,7 @@
               </div>
               <div class="stat-item" data-count="95">
                 <span class="stat-number">95%</span>
-                <span class="stat-text">Clientes satisfechos</span>
+                <span class="stat-text">Satisfacción de los clientes</span>
               </div>
               <div class="stat-item" data-count="1">
                 <span class="stat-number">1+</span>
@@ -241,6 +229,10 @@
                 <span class="stat-text">Soporte técnico</span>
               </div>
             </div>
+            <div class="cta-box">
+              <h4>¿Listo para transformar tu negocio?</h4>
+              <a href="#contacto" class="btn-primary">Hablemos de tu proyecto</a>
+            </div>
           </div>
         </div>
       </section>
@@ -248,9 +240,9 @@
       <!-- Catálogo de productos -->
       <section id="catalogo" class="catalogo">
         <div class="container">
-          <div class="section-header">
-            <h2>Nuestros productos</h2>
-            <p>Soluciones a medida para tu negocio</p>
+          <div class="section-header animate-on-scroll">
+            <h2>Nuestros Productos de Vanguardia</h2>
+            <p>Soluciones diseñadas para transformar tu negocio</p>
           </div>
           <div class="carousel-container">
             <button class="carousel-btn prev" aria-label="Producto anterior">
@@ -259,47 +251,44 @@
             <div class="productos-carousel">
               <div class="producto">
                 <div class="producto-img">
-                  <img src="assets/portal-clientes.jpg" alt="Portal de Clientes" width="400" height="300" loading="lazy">
+                  <img src="assets/portal-clientes.jpg" alt="Portal de Clientes" loading="lazy">
                 </div>
                 <div class="producto-content">
-                  <h3>Portal de clientes</h3>
-                  <p>Plataforma interactiva para gestionar la relación con tus usuarios y clientes, con funcionalidades como seguimiento de pedidos, historial de compras y atención al cliente integrada.</p>
+                  <h3>Portal de Clientes</h3>
+                  <p>Plataforma interactiva para gestionar la relación con tus usuarios y clientes. Este portal permite a tus clientes acceder a sus datos, interactuar con tu equipo y recibir actualizaciones en tiempo real, todo desde una interfaz personalizable y fácil de usar.</p>
                   <ul class="producto-features">
-                    <li><i class="fas fa-check"></i> Interfaz personalizable</li>
+                    <li><i class="fas fa-check"></i> Interfaz personalizable para tu marca</li>
                     <li><i class="fas fa-check"></i> Gestión de usuarios avanzada</li>
-                    <li><i class="fas fa-check"></i> Integración con CRM</li>
+                    <li><i class="fas fa-check"></i> Integración con CRM para mayor eficiencia</li>
                   </ul>
-                  <a href="#contacto" class="btn-secondary">Más información</a>
                 </div>
               </div>
               <div class="producto">
                 <div class="producto-img">
-                  <img src="assets/consultoria-tecnologica.jpg" alt="Consultoría Tecnológica" width="400" height="300" loading="lazy">
+                  <img src="assets/consultoria-tecnologica.jpg" alt="Consultoría Tecnológica" loading="lazy">
                 </div>
                 <div class="producto-content">
                   <h3>Consultoría Tecnológica</h3>
-                  <p>Servicios de asesoramiento experto para la optimización de procesos y estrategias digitales, incluyendo análisis de infraestructura, recomendaciones de mejora y implementación de soluciones.</p>
+                  <p>Servicios de asesoramiento experto para la optimización de procesos y estrategias digitales. Realizamos auditorías tecnológicas completas, diseñamos planes de implementación y ofrecemos soporte continuo para asegurar el éxito de tu transformación digital.</p>
                   <ul class="producto-features">
                     <li><i class="fas fa-check"></i> Auditoría tecnológica completa</li>
                     <li><i class="fas fa-check"></i> Plan de implementación detallado</li>
                     <li><i class="fas fa-check"></i> Seguimiento y soporte continuo</li>
                   </ul>
-                  <a href="#contacto" class="btn-secondary">Más información</a>
                 </div>
               </div>
               <div class="producto">
                 <div class="producto-img">
-                  <img src="assets/plataforma-analytics.jpg" alt="Plataforma Analytics" width="400" height="300" loading="lazy">
+                  <img src="assets/plataforma-analytics.jpg" alt="Plataforma Analytics" loading="lazy">
                 </div>
                 <div class="producto-content">
                   <h3>Plataforma Analytics</h3>
-                  <p>Herramienta de análisis avanzado para monitorear y optimizar el rendimiento de tu negocio con visualizaciones interactivas y reportes personalizados.</p>
+                  <p>Herramienta de análisis avanzado para monitorear y optimizar el rendimiento de tu negocio. Obtén dashboards personalizados, análisis predictivo y exportación de datos para tomar decisiones informadas y maximizar tus resultados.</p>
                   <ul class="producto-features">
-                    <li><i class="fas fa-check"></i> Dashboards personalizados</li>
-                    <li><i class="fas fa-check"></i> Análisis predictivo</li>
-                    <li><i class="fas fa-check"></i> Exportación de datos</li>
+                    <li><i class="fas fa-check"></i> Dashboards personalizados para tu negocio</li>
+                    <li><i class="fas fa-check"></i> Análisis predictivo para anticipar resultados</li>
+                    <li><i class="fas fa-check"></i> Exportación de datos en múltiples formatos</li>
                   </ul>
-                  <a href="#contacto" class="btn-secondary">Más información</a>
                 </div>
               </div>
             </div>
@@ -307,20 +296,16 @@
               <i class="fas fa-chevron-right"></i>
             </button>
           </div>
-          <div class="carousel-indicators">
-            <span class="indicator active"></span>
-            <span class="indicator"></span>
-            <span class="indicator"></span>
-          </div>
+
         </div>
       </section>
 
       <!-- Contacto -->
       <section id="contacto" class="contacto">
         <div class="container">
-          <div class="section-header">
-            <h2>Contáctanos</h2>
-            <p>Estamos listos para ayudarte</p>
+          <div class="section-header animate-on-scroll">
+            <h2>Conéctate con Nosotros</h2>
+            <p>Estamos listos para ayudarte a transformar tu negocio</p>
           </div>
           <div class="contacto-content">
             <div class="contacto-form">
@@ -330,7 +315,7 @@
                   <input type="text" id="nombreInput" name="nombre" placeholder="Tu nombre" required>
                 </div>
                 <div class="form-group">
-                  <label for="emailFullInput">Correo electrónico</label>
+                  <label for="emailFullInput">Correo Electrónico</label>
                   <input type="email" id="emailFullInput" name="email" placeholder="Tu correo electrónico" required>
                 </div>
                 <div class="form-group">
@@ -345,37 +330,8 @@
                   <input type="checkbox" id="privacyCheckbox" name="privacyConsent" required>
                   <label for="privacyCheckbox">Acepto la <a href="politica-privacidad.html">política de privacidad</a></label>
                 </div>
-                <button type="submit" class="btn-primary">Enviar mensaje</button>
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
               </form>
-            </div>
-            <div class="contacto-info">
-              <div class="info-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <div>
-                  <h4>Dirección</h4>
-                  <p>Av. Tecnológica 123, Ciudad Digital</p>
-                </div>
-              </div>
-              <div class="info-item">
-                <i class="fas fa-phone"></i>
-                <div>
-                  <h4>Teléfono</h4>
-                  <p>+123 456 7890</p>
-                </div>
-              </div>
-              <div class="info-item">
-                <i class="fas fa-envelope"></i>
-                <div>
-                  <h4>Email</h4>
-                  <p><a href="mailto:contacto@enkinet.com">contacto@enkinet.com</a></p>
-                </div>
-              </div>
-              <div class="social-links">
-                <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              </div>
             </div>
           </div>
         </div>
@@ -388,11 +344,11 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="assets/logo.png" alt="Logo EnkiNet" class="logo" width="120" height="40">
+          <img src="assets/logo.png" alt="Logo EnkiNet" class="logo" width="75" height="75">
           <p>Transformamos ideas en realidades digitales</p>
         </div>
         <div class="footer-links">
-          <h4>Enlaces rápidos</h4>
+          <h4>Enlaces Rápidos</h4>
           <ul>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#servicios">Servicios</a></li>
@@ -402,14 +358,46 @@
           </ul>
         </div>
         <div class="footer-services">
-          <h4>Nuestros servicios</h4>
+          <h4>Nuestros Servicios</h4>
           <ul>
             <li><a href="#servicios">Desarrollo web</a></li>
             <li><a href="#servicios">Aplicaciones móviles</a></li>
             <li><a href="#servicios">Software personalizado</a></li>
             <li><a href="#servicios">Análisis de datos</a></li>
-            <li><a href="#servicios">Consultoría tecnológica</a></li>
+            <li><a href="#servicios">Gestión de inversiones</a></li>
+            <li><a href="#servicios">Optimización de ventas</a></li>
+            <li><a href="#servicios">Redes inteligentes</a></li>
           </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contáctanos</h4>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h5>Dirección</h5>
+              <p>Av. Tecnológica 123, Ciudad Digital</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h5>Teléfono</h5>
+              <p>+123 456 7890</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h5>Email</h5>
+              <p><a href="/cdn-cgi/l/email-protection#533a3d353c13363d383a3d36277d303c3e">[email protected]</a></p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
         </div>
         <div class="footer-newsletter">
           <h4>Newsletter</h4>
@@ -417,7 +405,7 @@
           <form id="newsletterForm" action="newsletter-signup.php" method="POST">
             <div class="form-group">
               <input type="email" id="newsletterEmail" name="email" placeholder="Tu correo electrónico" required>
-              <button type="submit" class="btn-secondary">Suscribirse</button>
+              <button type="submit" class="btn-primary">Suscribirse</button>
             </div>
           </form>
         </div>
@@ -425,13 +413,8 @@
       <div class="footer-bottom">
         <p>© 2025 EnkiNet. Todos los derechos reservados.</p>
         <div class="footer-legal">
-          <a href="politica-privacidad.html">Política de privacidad</a>
-          <a href="terminos-condiciones.html">Términos y condiciones</a>
-        </div>
-        <div class="social">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="politica-privacidad.html">Política de Privacidad</a>
+          <a href="terminos-condiciones.html">Términos y Condiciones</a>
         </div>
       </div>
     </div>
@@ -442,19 +425,7 @@
     <i class="fas fa-arrow-up"></i>
   </a>
 
-  <!-- Cookie Consent -->
-  <div id="cookie-consent" class="cookie-consent">
-    <div class="cookie-content">
-      <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestra <a href="politica-cookies.html">política de cookies</a>.</p>
-      <div class="cookie-buttons">
-        <button id="accept-cookies" class="btn-primary">Aceptar</button>
-        <button id="reject-cookies" class="btn-secondary">Rechazar</button>
-      </div>
-    </div>
-  </div>
-
   <!-- Scripts -->
   <script src="script.js" defer></script>
-  <!-- Eliminar email-decode.min.js y scripts de Cloudflare que no son necesarios -->
 </body>
 </html>
